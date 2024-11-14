@@ -7,11 +7,6 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('docker-hub-access-token')
     }
 
-    tools {
-        maven 'Maven 3.9.9'
-        jdk 'JDK 17'
-    }
-
     stages {
         stage('Checkout') {
             steps {
